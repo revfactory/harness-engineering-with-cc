@@ -1,0 +1,8 @@
+$ python3 run/max_retries.py success
+=== scenario: success ===
+  [attempt 1/3] artifact=artifact_v1_bad passed=False reason=artifact_v1_bad 검증 실패: 'good' 마커 누락
+  [attempt 2/3] artifact=artifact_v2_good passed=True reason=
+result: artifact_v2_good
+
+# 예상 출력 (코드 미실행, 정적 분석으로 도출).
+# 1회차에 'bad' → FAIL, 2회차에 'good' → PASS → MAX_RETRIES 한계 도달 전에 정상 종료.

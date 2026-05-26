@@ -1,0 +1,10 @@
+$ python3 run/max_retries.py fail
+=== scenario: fail ===
+  [attempt 1/3] artifact=artifact_v1_bad passed=False reason=artifact_v1_bad 검증 실패: 'good' 마커 누락
+  [attempt 2/3] artifact=artifact_v2_bad passed=False reason=artifact_v2_bad 검증 실패: 'good' 마커 누락
+  [attempt 3/3] artifact=artifact_v3_bad passed=False reason=artifact_v3_bad 검증 실패: 'good' 마커 누락
+result: escalated: 3회 실패, 수동 개입 필요
+
+# 예상 출력 (코드 미실행).
+# 3회 모두 'bad' → for 루프 탈출 → f-string 문구 그대로 반환 → "수동 개입 필요" 에스컬레이트.
+# 책 p140 문구 "escalated: 3회 실패, 수동 개입 필요" 보존 확인.
