@@ -12,6 +12,7 @@ Claude Code를 "한 번의 대화를 잘 굴리는 도구"가 아니라 **작업
 | 예제 | 주제 | 설명 |
 |---|---|---|
 | [`ex-02-01-ab-comparison`](./ex-02-01-ab-comparison) | 하네스 적용 전/후 A/B 비교 | 동일한 한 줄 프롬프트(`claude code 사용 팁 정리해주세요`)를 **맨몸**과 **하네스 적용** 두 가지 방식으로 실행한 결과를 2단 페이지로 비교합니다. |
+| [`ex-02-02-my-first-harness`](./ex-02-02-my-first-harness) | 첫 하네스 만들기 — 2인 팀 커밋 메시지 생성 | `commit-msg-author` 와 `commit-msg-reviewer` 두 에이전트, 그리고 이들을 순차 호출하는 `commit-message` 스킬로 구성한 최소 하네스. 스테이지된 변경을 받아 Conventional Commits 형식의 커밋 메시지를 author·reviewer 협업으로 생성합니다. |
 
 > 추가 예제는 챕터 진행에 따라 같은 컨벤션으로 계속 추가될 예정입니다.
 
